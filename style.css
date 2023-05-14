@@ -65,133 +65,139 @@ img{
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+
+.project-bg-1{
+  background-image: url(./img/bg1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.project-bg-2{
+  background-image: url(./img/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.project-bg-3{
+  background-image: url(./img/bg3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.project-bg-4{
+  background-image: url(./img/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.project-bg-5{
+  background-image: url(./img/bg1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.project-bg-6{
+  background-image: url(./img/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.project-bg-7{
+  background-image: url(./img/bg3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.project-bg-8{
+  background-image: url(./img/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.project-bg-9{
+  background-image: url(./img/bg3.jpg);
+  background-position: center;
+  background-size: cover;
+}
 /* design start */
 .section-padding {
   padding: 40px 0;
 }
-.section-title h2 {
-  font-size: 30px;
-  font-weight: normal;
+ul.project-flitter {
+  margin: 0 0 50px;
   text-align: center;
 }
-.section-title {
-  margin-bottom: 50px;
-  text-transform: uppercase;
-  padding-bottom: 30px;
+ul.project-flitter li {
+  font-weight: 700;
+  display: inline-block;
+  color: #777;
+  border-bottom: 3px solid #fff;
+  margin: 0 10px;
+  cursor: pointer;
 }
-.testimonial-right-title {
-  text-transform: uppercase;
-  color: rgb(236, 236, 236);
-  font-weight: bold;
-  position: absolute;
-  z-index: 1;
-  margin: 0px;
-  padding: 0px;
-  transform: rotate(270deg);
-  left: -17%;
-  width: 400px;
-  top: 40%;
+ul.project-flitter li.active{
+  border-color: #333;
 }
-.testimonial-right-title:after {
-  position: absolute;
-  height: 2px;
+.single-project-title {
+  display: table;
+  height: 300px;
   width: 100%;
-  top: 50%;
-  right: 0px;
-  background: #F0F0F0;
+  position: relative;
+  z-index: 1;
+  text-transform: lowercase;
+  font-weight: 400;
+}
+.single-project-title:hover .project-hover{
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+}
+.single-project-title:hover::before, .single-project-title:hover::after{
+  visibility: visible;
+  opacity: 1;
+}
+.project-hover {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 35px;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s ease;
+  transform: scale(0.8);
+  visibility: hidden;
+  opacity: 0;
+}
+.project-hover::after{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  opacity: 0.6;
+  z-index: -1;
   content: "";
 }
-h2.testimonial-right-title span {
-  background: #fff;
-  position: relative;
-  z-index: 2;
-  padding-right: 30px;
-  display: inline-block;
-}
-.testimonial-top{
-  text-align: center;
-  margin-top: 40px;
-  padding-top: 20px;
-  margin-bottom: 50px;
-}
-.testimonial-top img {
-  max-width: 150px;
-  display: inline-block;
-  margin-top: -35px;
-  max-height: 110px;
-}
-.testimonial-top h3 {
-  display: inline-block;
-  text-align: left;
+.project-hover h2 {
   font-size: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-left: 15px;
-  max-width: 180px;
+  font-weight: 700;
+  line-height: 30px;
 }
-.testimonial-top h3 span {
-  font-weight: normal;
-  text-transform: none;
-  font-size: 80%;
-  opacity: 0.5;
+.single-project-title::before{
+  position: absolute;
+  right: 0;
+  height: 80px;
+  width: 80px;
+  border-right: 2px solid #000;
+  border-top: 2px solid #000;
+  content: "";
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
 }
-.testimonial-top h3 span {
-  font-weight: normal;
-  text-transform: none;
-  font-size: 80%;
-  opacity: 0.5;
-  display: inline-block;
-  padding-top: 10px;
-}
-
-.single-testimonial-item {
-  color: #888;
-  font-size: 15px;
-  line-height: 1.8;
-  box-shadow: 0px 0px 3px #d6cbcb;
-  padding: 40px 80px;
-  margin: 0px 50px;
-}
-
-.testimonial-content{
-  text-align: center;
-}
-ul.testimonial-author-name img {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  margin-top: -27px;
-}
-ul.testimonial-author-name h3 {
-  display: inline-block;
-}
-ul.testimonial-author-name h3 {
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding-left: 10px;
-}
-ul.testimonial-author-name h3 span {
-  font-size: 80%;
-  opacity: 0.5;
-  padding-top: 5px;
-  display: inline-block;
-  text-transform: none;
-}
-ul.testimonial-author-name li {
-  padding-top: 30px;
-  margin-bottom: 10px;
-  
-}
-ul.testimonial-author-name {
-  height: 260px;
-  overflow-y: scroll;
-}
-ul.testimonial-author-name {
-  height: 330px;
-  overflow-y: scroll;
-}
-.testimonial-wrapper {
-  position: relative;
+.single-project-title::after{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 80px;
+  width: 80px;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  content: "";
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
 }
